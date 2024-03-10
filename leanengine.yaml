@@ -1,0 +1,3 @@
+runtime: dotnet
+bulid:
+  - dotnet ./Ray.BiliBiliTool.Console.dll --runTasks=Login
