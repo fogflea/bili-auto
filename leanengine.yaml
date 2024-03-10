@@ -1,3 +1,6 @@
 runtime: dotnet
 bulid:
+  - dotnet restore ./Ray.BiliBiliTool.sln
+  - dotnet publish ./Ray.BiliBiliTool.Console/Ray.BiliBiliTool.Console.csproj -c Release -o ./publish
+run:
   - dotnet ./Ray.BiliBiliTool.Console.dll --runTasks=Login
